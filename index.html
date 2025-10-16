@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kyle Ezeji | Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+			<div class="profile-header">
+				<img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=400&h=400&facepad=2" alt="Kyle Ezeji" class="profile-img stylish-img">
+				<h1>Kyle Ezeji</h1>
+					<nav>
+						<a href="#about">About</a>
+						<a href="#projects">Projects</a>
+						<a href="#contact">Contact</a>
+					</nav>
+					<button id="themeToggle" title="Toggle dark/light mode">🌙</button>
+			</div>
+	</header>
+
+				<section id="about">
+					<div class="glass-card">
+						<h2>About Me</h2>
+						<p id="typedText">Hello! I'm <b>Kyle Ezeji</b>, a passionate web developer with a love for creating beautiful and functional websites.</p>
+						<div class="about-details">
+							<div class="about-left">
+								<h3>Skills</h3>
+								<ul class="skills-list">
+									<li>HTML5, CSS3, JavaScript (ES6+)</li>
+									<li>React, Vue, Svelte</li>
+									<li>Node.js, Express</li>
+									<li>Python, Django</li>
+									<li>UI/UX Design</li>
+									<li>Responsive & Mobile-first Design</li>
+								</ul>
+								<h3>Experience</h3>
+								<ul class="exp-list">
+									<li><b>Frontend Developer</b> at Webify (2023–2025)</li>
+									<li><b>Freelance Web Designer</b> (2021–2023)</li>
+								</ul>
+							</div>
+							<div class="about-right">
+								<h3>Fun Facts</h3>
+								<ul class="fun-facts">
+									<li>Loves hiking and photography</li>
+									<li>Speaks 3 languages</li>
+									<li>Has built 30+ websites</li>
+								</ul>
+								<h3>Hobbies</h3>
+								<ul class="hobbies-list">
+									<li>Traveling</li>
+									<li>Music production</li>
+									<li>Chess</li>
+								</ul>
+							</div>
+						</div>
+						<div class="counters">
+							<div class="counter"><span id="websitesCount">0</span><br>Websites Built</div>
+							<div class="counter"><span id="yearsCount">0</span><br>Years Experience</div>
+							<div class="counter"><span id="clientsCount">0</span><br>Happy Clients</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Project Modal -->
+				<div id="projectModal" class="modal">
+					<div class="modal-content">
+						<span class="close-modal">&times;</span>
+						<div id="modalBody"></div>
+					</div>
+				</div>
+
+		<section id="projects">
+			<h2>Projects</h2>
+			<div class="project-filters">
+				<button class="filter-btn active" data-filter="all">All</button>
+				<button class="filter-btn" data-filter="web">Web</button>
+				<button class="filter-btn" data-filter="app">App</button>
+				<button class="filter-btn" data-filter="design">Design</button>
+			</div>
+			<div class="project-list">
+				<div class="project" data-type="web">
+					<h3>Personal Portfolio</h3>
+					<p>A modern, responsive portfolio website to showcase my skills and projects. Built with HTML, CSS, and JavaScript.</p>
+				</div>
+				<div class="project" data-type="web">
+					<h3>Weather App</h3>
+					<p>A simple weather application that fetches real-time weather data using a public API and displays it in a user-friendly interface.</p>
+				</div>
+				<div class="project" data-type="app">
+					<h3>Task Manager</h3>
+					<p>A productivity tool to manage daily tasks, featuring a clean UI and persistent storage using localStorage.</p>
+				</div>
+				<div class="project" data-type="design">
+					<h3>Brand Identity Kit</h3>
+					<p>Designed a full brand identity kit for a startup, including logo, color palette, and typography.</p>
+				</div>
+				<div class="project" data-type="web">
+					<h3>Blog Platform</h3>
+					<p>Developed a full-featured blog platform with user authentication, comments, and markdown support.</p>
+				</div>
+				<div class="project" data-type="app">
+					<h3>Fitness Tracker</h3>
+					<p>Mobile-friendly fitness tracker app with progress charts and social sharing features.</p>
+				</div>
+			</div>
+				<div class="testimonials glass-card">
+					<h3>Testimonials</h3>
+					<div class="testimonial-slider">
+						<div class="testimonial-slide active">
+							<img src="p.jpeg" alt="Patricia" class="testimonial-img">
+							<blockquote>"Kyle is a fantastic developer! He delivered our project on time and exceeded expectations."<br><span>- Patricia, Webify</span></blockquote>
+						</div>
+						<div class="testimonial-slide">
+							<img src="s.jpeg" alt="Samuel" class="testimonial-img">
+							<blockquote>"Creative, reliable, and a great communicator. Highly recommended!"<br><span>- Samuel, Client</span></blockquote>
+						</div>
+						<div class="testimonial-slide">
+							<img src="ojuio.webp" alt="Ojuio" class="testimonial-img">
+							<blockquote>"His attention to detail and design sense is top-notch!"<br><span>- Ojuio, Designer</span></blockquote>
+						</div>
+						<div class="testimonial-slide">
+							<img src="xzdw.jpeg" alt="Xzdw" class="testimonial-img">
+							<blockquote>"Working with Kyle was a pleasure. The results speak for themselves!"<br><span>- Xzdw, Project Manager</span></blockquote>
+						</div>
+						<div class="testimonial-slide">
+							<img src="hskqxs.webp" alt="Hskqxs" class="testimonial-img">
+							<blockquote>"Professional, creative, and always on time. Highly recommended!"<br><span>- Hskqxs, CEO</span></blockquote>
+						</div>
+					</div>
+					<div class="testimonial-nav">
+						<button class="testimonial-prev" aria-label="Previous testimonial">&#8592;</button>
+						<button class="testimonial-next" aria-label="Next testimonial">&#8594;</button>
+					</div>
+				</div>
+		</section>
+
+		<section id="contact">
+			<div class="glass-card">
+				<h2>Contact</h2>
+				<form id="contactForm">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" rows="4" required></textarea>
+					<button type="submit">Send Message</button>
+					<div id="formMsg"></div>
+				</form>
+				<div class="contact-links">
+					<a href="mailto:kyle.ezeji@email.com">kyle.ezeji@email.com</a> |
+					<a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+					<a href="https://github.com/" target="_blank">GitHub</a>
+				</div>
+			</div>
+		</section>
+
+			<footer>
+				&copy; 2025 Kyle Ezeji. All rights reserved.<br>
+				<span>Made with HTML, CSS, and JavaScript</span>
+				<button id="scrollTopBtn" title="Back to top">⬆️</button>
+			</footer>
+	<script src="min.js"></script>
+</body>
+</html>
